@@ -27,4 +27,6 @@ services:
       - "8080:80"
     environment:
       - CLICKHOUSE_URL=http://clickhouse-server:8123
+    volumes:
+      - ./config/tabix.json:/app/config.json
 
